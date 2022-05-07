@@ -1,10 +1,40 @@
-body{
+body {
   margin: 0;
   text-align: center;
+  font-family: "Merriweather", serif;
 }
-h1{
+
+h1 {
   margin-top: 0;
+  font-family: "Sacramento", cursive;
 }
-.top-container{
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.span-class {
+  text-decoration: underline;
+}
+
+.top-container {
   background-color: #EFFFFD;
+  position: relative;
+  padding-top: 100px;
+}
+
+.top-cloud {
+  position: absolute;
+  top: 50px;
+  right: 300px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
 }
