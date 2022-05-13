@@ -5,22 +5,35 @@ body {
 }
 
 h1 {
-  margin-top: 0;
+  font-size: 5.625rem;
+  margin-top: 50px auto 0 auto;
   font-family: "Sacramento", cursive;
+  color: #66BFBF;
+
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #66BFBF;
 }
+
+
 
 h3 {
   font-family: "Montserrat", sans-serif;
+  color: #11999E;
 }
 
-#profile-img{
+#profile-img {
   border-radius: 100%;
   height: 200px;
   width: 200px;
+}
+
+a {
+  color: #11999E;
 }
 
 .span-class {
@@ -43,4 +56,32 @@ h3 {
   position: absolute;
   left: 300px;
   bottom: 300px;
+}
+.profile{
+  margin: 100px auto 100px auto;
+}
+
+.project-row{
+  margin: 100px auto 100px auto;
+  width: 50%;
+  text-align: left;
+  line-height: 1.5;
+}
+.skill-row {
+  text-align: left;
+  width: 50%;
+  margin: 100px auto 100px auto;
+  line-height: 1.5;
+}
+
+.projects-img{
+  width: 35%;
+  margin: auto auto auto 35px;
+  float: right;
+}
+
+.skill-img{
+  width: 35%;
+  margin: auto 35px auto auto;
+  float: left;
 }
