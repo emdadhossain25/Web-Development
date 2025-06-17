@@ -71,6 +71,20 @@ app.post("/post/new", (req, res) => {
 });
 
 //CHALLENGE 4: PATCH a post when you just want to update one parameter
+app.patch("/post/:id", (req, res) => {
+  const id = parseInt(req.params.id);
+  const existingPost = posts.find((post) => id === post.id);
+  const findIndex = posts.findIndex((post) => id === post.id);
+  const replacementPost = {
+    id: req.body.id || existingPost.id,
+    title: req.body.title || existingPost.title,
+    content: req.body.content || existingPost.content,
+    author: req.body.author || existingPost.author,
+    date: req.body.date || existingPost.date,
+  };
+  posts[findIndex] = replacementPost;
+  res.json(posts);
+});
 
 //CHALLENGE 5: DELETE a specific post by providing the post id.
 
